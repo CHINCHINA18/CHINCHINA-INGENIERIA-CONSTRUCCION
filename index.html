@@ -2,103 +2,81 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CHINCHINA INGENIERÍA & CONSTRUCCIÓN E.I.R.L.</title>
-  <style>
-    /* ... estilos igual que antes ... */
-    /* Asegúrate de mantener los estilos para el header, sección, footer y formulario */
-  </style>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
+
   <header>
-    <!-- Aquí inserta tu logo con la ruta correcta y ajusta tamaño -->
-    <img src="images/logo.png" alt="Logo CHINCHINA" height="60" style="margin-right: 15px;">
-    <div class="logo" style="color: white; font-weight: bold; font-size: 1.5rem; display: inline-block; vertical-align: middle;">
-      CHINCHINA INGENIERÍA & CONSTRUCCIÓN
-    </div>
-    <nav style="margin-left: auto;">
-      <a href="#inicio">Inicio</a>
-      <a href="#servicios">Servicios</a>
-      <a href="#sobre-nosotros">Sobre Nosotros</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="#contacto">Contacto</a>
+    <img src="images/logo.png" alt="Logo CHINCHINA" class="logo" />
+    <nav>
+      <a href="#edificaciones"><i class="fas fa-building"></i> Edificaciones</a>
+      <a href="#viales"><i class="fas fa-road"></i> Obras Viales</a>
+      <a href="#hidraulicas"><i class="fas fa-water"></i> Obras Hidráulicas</a>
+      <a href="#galeria"><i class="fas fa-images"></i> Galería</a>
+      <a href="#contacto"><i class="fas fa-envelope"></i> Contacto</a>
     </nav>
   </header>
 
-  <div id="inicio" class="hero">
-    Soluciones profesionales en ingeniería y construcción
-  </div>
+  <section class="hero">
+    <h1>CHINCHINA INGENIERÍA & CONSTRUCCIÓN</h1>
+    <p>Excelencia en edificaciones, obras viales e hidráulicas</p>
+  </section>
 
-  <section id="servicios">
-    <h2>Servicios</h2>
-    <div class="services">
-      <div class="card">
-        <!-- Reemplaza la siguiente imagen por la de tu preferencia -->
-        <img src="images/ingenieria.jpg" alt="Ingeniería" />
-        <h3>Ingeniería</h3>
-        <p>Diseño y planificación técnica para proyectos de construcción de alta calidad.</p>
+  <section id="edificaciones" class="section fade-in">
+    <h2><i class="fas fa-building"></i> Edificaciones</h2>
+    <p>Diseñamos y construimos estructuras modernas, funcionales y seguras. Desde viviendas hasta complejos institucionales, cada proyecto refleja nuestro compromiso con la calidad y la estética.</p>
+  </section>
+
+  <section id="viales" class="section fade-in">
+    <h2><i class="fas fa-road"></i> Obras Viales</h2>
+    <p>Conectamos comunidades a través de carreteras, puentes y caminos diseñados para durar. Aplicamos ingeniería avanzada y materiales de alta resistencia para garantizar seguridad y eficiencia.</p>
+  </section>
+
+  <section id="hidraulicas" class="section fade-in">
+    <h2><i class="fas fa-water"></i> Obras Hidráulicas</h2>
+    <p>Soluciones inteligentes para el manejo del agua: canales, reservorios, sistemas de drenaje y más. Nuestra experiencia garantiza funcionalidad, sostenibilidad y respeto por el entorno.</p>
+  </section>
+
+  <section id="galeria" class="gallery-section fade-in">
+    <h2><i class="fas fa-images"></i> Galería de Proyectos</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="images/proyecto1.jpg" alt="Edificación en Juliaca">
+        <p>Edificación en Juliaca</p>
       </div>
-      <div class="card">
-        <!-- Cambia esta imagen también a la que tú quieras -->
-        <img src="images/construccion.jpg" alt="Construcción" />
-        <h3>Construcción</h3>
-        <p>Ejecutamos obras con precisión, comodidad y seguridad, entregando resultados duraderos.</p>
+      <div class="gallery-item">
+        <img src="images/proyecto2.jpg" alt="Obra vial en Sicuani">
+        <p>Obra vial en Sicuani</p>
       </div>
-      <div class="card">
-        <img src="images/asesoria.jpg" alt="Asesoría Técnica" />
-        <h3>Asesoría Técnica</h3>
-        <p>Asistencia especializada para optimización y gestión de proyectos de construcción.</p>
+      <div class="gallery-item">
+        <img src="images/proyecto3.jpg" alt="Canal hidráulico en Puno">
+        <p>Canal hidráulico en Puno</p>
       </div>
     </div>
   </section>
 
-  <section id="sobre-nosotros">
-    <h2>Sobre Nosotros</h2>
-    <p>CHINCHINA INGENIERÍA & CONSTRUCCIÓN E.I.R.L. es una empresa comprometida con la excelencia en proyectos de ingeniería y construcción. Contamos con un equipo profesional altamente capacitado y ponemos la calidad, innovación y seguridad en el centro de todo lo que hacemos.</p>
-    <p>Nuestra misión es entregar soluciones integrales que superen las expectativas de nuestros clientes y contribuyan al desarrollo sostenible.</p>
-  </section>
-
-  <section id="proyectos">
-    <h2>Proyectos</h2>
-    <div class="projects">
-      <div class="card">
-        <!-- Cambia estas fotos con las tuyas -->
-        <img src="images/proyecto1.jpg" alt="Proyecto 1" />
-        <h3>Edificio Corporativo</h3>
-        <p>Construcción de moderno edificio de oficinas con tecnología avanzada y diseño ecoeficiente.</p>
-      </div>
-      <div class="card">
-        <img src="images/proyecto2.jpg" alt="Proyecto 2" />
-        <h3>Viviendas Residenciales</h3>
-        <p>Desarrollo integral de viviendas sostenibles y accesibles para familias.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <form>
-      <label for="name">Nombre</label>
-      <input type="text" id="name" name="name" placeholder="Tu nombre" required />
-
-      <label for="email">Correo Electrónico</label>
-      <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required />
-
-      <label for="phone">Teléfono</label>
-      <input type="tel" id="phone" name="phone" placeholder="Número de teléfono" required />
-
-      <label for="message">Mensaje</label>
-      <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí" required></textarea>
-
-      <button type="submit">Enviar</button>
+  <section id="contacto" class="contact fade-in">
+    <h2><i class="fas fa-envelope"></i> Contáctanos</h2>
+    <p>📍 Pj. Qolqa Pampa Nro. S/n Asc. Luz de Copacabana – Sicuani, Cusco<br>
+       📞 925430807<br>
+       ✉️ chinchina.e.i.r.l.11@gmail.com</p>
+    <form action="https://formspree.io/f/tu-codigo" method="POST">
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <input type="email" name="email" placeholder="Tu correo" required>
+      <textarea name="mensaje" rows="4" placeholder="Tu mensaje" required></textarea>
+      <button type="submit">Enviar mensaje</button>
     </form>
-    <p style="text-align:center; margin-top:20px; color:#006600;">
-      Dirección: Pj. Qolqa Pampa Nro. S/n Asc. Luz de Copacabana | Teléfono: 925430807 | Email: chinchina.e.i.r.l.11@gmail.com
-    </p>
   </section>
 
   <footer>
-    © 2025 CHINCHINA INGENIERÍA & CONSTRUCCIÓN E.I.R.L. - Todos los derechos reservados
+    <p><strong>CHINCHINA INGENIERÍA & CONSTRUCCIÓN E.I.R.L.</strong></p>
+    <p>📍 Pj. Qolqa Pampa Nro. S/n Asc. Luz de Copacabana – Sicuani, Cusco</p>
+    <p>📞 925430807 | ✉️ chinchina.e.i.r.l.11@gmail.com</p>
+    <p>&copy; 2025 Todos los derechos reservados</p>
   </footer>
+
 </body>
 </html>
