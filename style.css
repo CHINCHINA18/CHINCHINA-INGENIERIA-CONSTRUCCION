@@ -1,38 +1,74 @@
+/* Paleta: Azul (#003366), Amarillo (#FFD700), Verde (#228B22) */
+
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
 header {
-  background-color: #003366;
+  background: linear-gradient(to right, #003366, #228B22);
   color: white;
-  padding: 20px;
   text-align: center;
+  padding: 30px 20px;
 }
 
-header img {
+.logo {
   max-width: 120px;
-  display: block;
-  margin: 0 auto 10px;
+  margin-bottom: 10px;
+}
+
+.slogan {
+  font-size: 1.2em;
+  font-weight: 300;
+  margin-top: 5px;
+  color: #FFD700;
 }
 
 .galeria {
-  padding: 20px;
+  padding: 40px 20px;
   text-align: center;
 }
 
-.imagenes img {
-  width: 30%;
-  margin: 10px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+.galeria h2 {
+  color: #003366;
+  margin-bottom: 30px;
+}
+
+.imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+figure {
+  width: 280px;
+  margin: 0;
+}
+
+figure img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+figure img:hover {
+  transform: scale(1.05);
+}
+
+figcaption {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #228B22;
 }
 
 footer {
   background-color: #003366;
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 20px;
+  font-size: 0.9em;
 }
