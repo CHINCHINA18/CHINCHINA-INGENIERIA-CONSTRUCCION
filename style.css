@@ -1,64 +1,38 @@
-/* Reset básico */
-* {
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Segoe UI', sans-serif;
   background-color: #f4f4f4;
-  color: #333;
-  line-height: 1.6;
 }
 
-/* Encabezado */
 header {
-  background-color: #003366; /* Azul institucional */
+  background-color: #003366;
   color: white;
   padding: 20px;
   text-align: center;
 }
 
-.logo {
+header img {
   max-width: 120px;
-  margin-bottom: 10px;
+  display: block;
+  margin: 0 auto 10px;
 }
 
-nav a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: bold;
+.galeria {
+  padding: 20px;
+  text-align: center;
 }
 
-nav a:hover {
-  text-decoration: underline;
+.imagenes img {
+  width: 30%;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-/* Secciones */
-main {
-  padding: 40px 20px;
-}
-
-section {
-  margin-bottom: 40px;
-}
-
-h2 {
-  color: #006699; /* Azul claro */
-  margin-bottom: 10px;
-}
-
-/* Contacto */
-#contacto p {
-  font-size: 1.1em;
-}
-
-/* Footer */
 footer {
   background-color: #003366;
   color: white;
   text-align: center;
-  padding: 15px;
+  padding: 10px;
 }
